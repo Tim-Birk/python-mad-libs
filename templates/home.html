@@ -1,0 +1,35 @@
+{% extends 'base.html' %} {% block title %}Mad Libs Home{% endblock %} {% block
+content %}
+
+<h1 class="display-4 text-center my-4">Select a Story</h1>
+<div class="row text-center">
+  <div class="col-12 col-sm-6 col-md-4 mb-2">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">The Pizza Party</h5>
+        <p class="card-text">I just got back from a pizza party with...</p>
+        <a href="/story1" class="btn btn-primary">Go to story</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-sm-6 col-md-4 mb-2">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">The Queen</h5>
+        <p class="card-text">Today I met the Queen...</p>
+        <a href="/story2" class="btn btn-primary">Go to story</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-sm-6 col-md-4 mb-2">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Cooking School</h5>
+        <p class="card-text">I just finished cooking school...</p>
+        <a href="/story3" class="btn btn-primary">Go to story</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
