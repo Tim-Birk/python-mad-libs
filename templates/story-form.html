@@ -1,0 +1,21 @@
+{% extends 'base.html' %} {% block title %}{{title}}{% endblock %} {%
+block content %}
+
+<h1 class="text-center my-4">{{title}}</h1>
+<form action="{{post_url}}" method="POST">
+  {% for prompt in prompts %}
+  <div class="form-group" method="POST">
+    <input
+      type="text"
+      class="form-control"
+      name="{{prompt}}"
+      id="{{prompt}}"
+      placeholder="{{prompt.replace('_',' ').capitalize()}}"
+      required
+      minlength="3"
+    />
+  </div>
+  {% endfor %}
+  <button class="btn btn-primary">Submit</button>
+</form>
+{% endblock %}
